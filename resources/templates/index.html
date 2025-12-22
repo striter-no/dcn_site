@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DCN</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main-styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  </head>
+  <body>
+    <div class="container-fluid" id="main-parag">
+      <div class="container">
+        <div class="row justify-content-center align-items-start">
+          <h1 id="main-logo">DCN</h1>
+          <p style="color: #7A6F94">Domain Crypto Network</p>
+          <p style="color: #fff">Независимый проект российских разработчиков<br>
+  для создания <span class="ac1">децентрализованной, свободной<br>
+  и независимой</span> сети доменных имён</p>
+          
+          <div class="row justify-content-start align-items-start pt-5">
+            <input id="domain-search-input" placeholder="Проверить домен" class="col col-md-auto simple-rect usuall-inp" style="margin-left: 0.3pc"></input>
+            <button id="search-domain-btn" class="col-auto simple-rect" style="margin-left: 0.3pc"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" style="height: 1pc; width: 1.5pc;" class="col-auto"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"/></svg></button>
+          </div>
+          <!-- <div class="row justify-content-start align-items-start">
+            
+          </div> -->
+        </div>
+      </div>
+    </div>
+    
+    <div class="container-fluid py-5">
+      <div class="container">
+        <h1 class="tesis text-center py-5">Почему DCN?</h1>  
+        <div class="row justify-content-center align-items-center pt-5">
+          <div class="col-10 small-text center text-center text-lg-start fittyc">На данный момент классические DNS серверы являются <span class="ac1">единой точкой отказа</span>, что приводит к катастрофическим опасностям со стороны DDoS-атак</div>
+
+          <div class="col-12">
+            <hr class="my-4 thick-line">
+          </div>
+
+          <div class="col-10 main-text center text-center text-lg-start fittyc">DCN является полностью децентрализованной сетью, делая его <span class="ac2">невосприимчивым к DDoS</span> атакам</div>
+        </div>
+        <div class="row justify-content-center align-items-center py-5">
+          <div class="col-10 small-text center py-5 text-center text-lg-start fittyc">Традиционная DNS инфраструктура мешает начинающим разработчикам и стартапам из-за <span class="ac1">цен на покупку и поддержание</span> своего доменного имени</div>
+
+          <div class="col-12">
+            <hr class="my-4 thick-line">
+          </div>
+          <div class="col-10 main-text text-center text-lg-start fittyc">В DCN вы можете платить вычислительной мощностью своего ПК - <span class="ac2">майнингом</span></div>
+        </div>
+        <div class="row justify-content-center align-items-center py-5">
+          <div class="col-10 small-text center py-5 text-center text-lg-start fittyc">В настоящее время важнейшие решения принимаются <span class="ac1">несколькими компаниями-монополистами</span>, что особенно опасно в периоды  экономической и политической <span class="ac1">нестабильности</span> </div>
+
+          <div class="col-12">
+            <hr class="my-4 thick-line">
+          </div>
+          <div class="col-10 main-text text-center text-lg-start fittyc">Децентрализованность DCN означает отсутствие единого командования - никто <span class="ac2">кроме самих пользователей</span> не регулирует сеть</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid py-5">
+      <div class="container py-5">
+        <div class="row justify-content-center align-items-center">
+          <h1 class="tesis fittym">Не нужно регистрировать свой аккаунт<br>
+  Сеть DCN не имеет <span class="ac2">центрального командования</span><br><br><span class="info-text">вам надо только получить уникальный адрес кошелька и личный ключ</span></h1>
+          <div class="row">
+            <button id="copy-address-btn" class="col-auto copy-rect"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" style="width: auto;"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M128 128C128 92.7 156.7 64 192 64L448 64C483.3 64 512 92.7 512 128L512 545.1C512 570.7 483.5 585.9 462.2 571.7L320 476.8L177.8 571.7C156.5 585.9 128 570.6 128 545.1L128 128zM192 112C183.2 112 176 119.2 176 128L176 515.2L293.4 437C309.5 426.3 330.5 426.3 346.6 437L464 515.2L464 128C464 119.2 456.8 112 448 112L192 112z"/></svg></button>
+            <div id="wallet-address" class="col-9 col-lg-11 white-rect text-dots" title="">Загрузка...</div>
+            <p class="text-center sub-text py-1">или сгенерировать в программе майнера</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid py-5">
+      <div class="container py-5 main-cont">
+        <div class="row justify-content-center align-items-center">
+          <h1 class="tesis fittym">Попробуйте зарегистрировать своё первое доменное имя <br><span class="ac1">прямо сейчас</span></h1>
+          <!-- <p class="sub-text pt-1 pb-5">первые 50 пользователей получат .dcn бесплатно</p> -->
+          
+          <div class="row row-no-stretch align-items-center align-items-md-start">
+            <div class="col-auto point">1</div>
+            <p class="col main-text ">Получите свой уникальный <span class="ac2">адрес кошелька и ключ</span></p>
+          </div>
+          <div class="row row-no-stretch align-items-center align-items-md-start">
+            <div class="col-auto point">2</div>
+            <p class="col main-text">Зарегистрируйте свой <span class="ac2">домен</span></p>
+          </div>
+          <div class="row row-no-stretch align-items-center align-items-md-start">
+            <div class="col-auto point">3</div>
+            <p class="col main-text">Дождитесь подтверждения <span class="ac2">майнерами</span></p>
+          </div>
+
+          <div class="row justify-content-center align-items-center pt-5">
+            <button class="col-auto" id="register-domain-btn">Зарегестрировать домен</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid py-5">
+      <div class="container py-5 main-cont">
+        <div class="row justify-content-center align-items-center">
+          <h1 class="tesis fittym">Майнинг</h1>
+          <hr class="thick-line">
+          <p class="main-text text-start fittyc">Превратите майнинг в бесплатное обслуживание домена<br>Зарабатывайте криптовалюту, чтобы автоматически оплачивать продление домена.</p>
+          <p class="info-text pt-1 pb-5">Например: ₽50/день = 12 месяцев бесплатного домена в год</p>
+          <p class="main-text fittyc">Попробуйте майнинг <span class="ac1">просто</span><br>
+  Тестовый режим <span class="ac2">прямо в браузере</span></p>
+          <br>
+          <hr class="thick-line">
+          <p class="main-text pb-5 fittyc">Для <span class="ac2">постоянного и полноценного</span> майнинга загрузите программу майнера</p>
+          
+          <div class="row row-no-stretch align-items-center align-items-md-start py-1">
+            <div class="col-auto point">1</div>
+            <p class="col main2-text">Скачайте и запустите установщик</p>
+          </div>
+          <div class="row row-no-stretch align-items-center align-items-md-start py-1">
+            <div class="col-auto point">2</div>
+            <p class="col main2-text">Выберите нужные вам настройки майнера, ваш <span class="ac1">адрес кошелька и ключ</span></p>
+          </div>
+          <div class="row row-no-stretch align-items-center align-items-md-start py-1">
+            <div class="col-auto point">3</div>
+            <p class="col main2-text">Запустите программу майнера</p>
+          </div>
+
+          <div class="row justify-content-center align-items-center pt-5">
+            <button class="col-auto" id="try-in-browser-btn">Попробовать в браузере</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid py-5">
+      <div class="container py-5 main-cont">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-auto wrap-rect">
+            <p class="main-text ac2 responsive-text" id="stats-domains">-</p>
+            <p class="main-text ac2 responsive-text" id="stats-holders">-</p>
+            <p class="main-text ac2 responsive-text" id="stats-turnover">-</p>
+          </div>
+          <div class="col px-5">
+            <p class="main-text responsive-text">Доменных имен</p>
+            <p class="main-text responsive-text">Владельцев</p>
+            <p class="main-text responsive-text">DCN/сутки оборот криптовалюты</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="main-footer" class="container-fluid">
+      <!-- <div class="container"> -->
+        <div class="row w-100 w-md-75 row-no-stretch">
+          <img src="/static/images/logo.png" class="logo-img col-auto">
+          <div class="col-12 col-lg">
+            <hr class="thick-line">
+            <span style="color: #B6AFD0">Присоединяйтесь к<br>коммьюнити</span><br><br>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="small-icon"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M320 72C183 72 72 183 72 320C72 457 183 568 320 568C457 568 568 457 568 320C568 183 457 72 320 72zM435 240.7C431.3 279.9 415.1 375.1 406.9 419C403.4 437.6 396.6 443.8 390 444.4C375.6 445.7 364.7 434.9 350.7 425.7C328.9 411.4 316.5 402.5 295.4 388.5C270.9 372.4 286.8 363.5 300.7 349C304.4 345.2 367.8 287.5 369 282.3C369.2 281.6 369.3 279.2 367.8 277.9C366.3 276.6 364.2 277.1 362.7 277.4C360.5 277.9 325.6 300.9 258.1 346.5C248.2 353.3 239.2 356.6 231.2 356.4C222.3 356.2 205.3 351.4 192.6 347.3C177.1 342.3 164.7 339.6 165.8 331C166.4 326.5 172.5 322 184.2 317.3C256.5 285.8 304.7 265 328.8 255C397.7 226.4 412 221.4 421.3 221.2C423.4 221.2 427.9 221.7 430.9 224.1C432.9 225.8 434.1 228.2 434.4 230.8C434.9 234 435 237.3 434.8 240.6z"/></svg>
+            <a href="https://t.me/dcncommunity" style="color: #fff; text-decoration: none;">@dcncommunity</a>
+          </div>
+          <div class="col-12 col-lg">
+            <hr class="thick-line">
+            <span style="color: #B6AFD0">Нужна помощь?</span><br><br>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="small-icon"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M320 72C183 72 72 183 72 320C72 457 183 568 320 568C457 568 568 457 568 320C568 183 457 72 320 72zM435 240.7C431.3 279.9 415.1 375.1 406.9 419C403.4 437.6 396.6 443.8 390 444.4C375.6 445.7 364.7 434.9 350.7 425.7C328.9 411.4 316.5 402.5 295.4 388.5C270.9 372.4 286.8 363.5 300.7 349C304.4 345.2 367.8 287.5 369 282.3C369.2 281.6 369.3 279.2 367.8 277.9C366.3 276.6 364.2 277.1 362.7 277.4C360.5 277.9 325.6 300.9 258.1 346.5C248.2 353.3 239.2 356.6 231.2 356.4C222.3 356.2 205.3 351.4 192.6 347.3C177.1 342.3 164.7 339.6 165.8 331C166.4 326.5 172.5 322 184.2 317.3C256.5 285.8 304.7 265 328.8 255C397.7 226.4 412 221.4 421.3 221.2C423.4 221.2 427.9 221.7 430.9 224.1C432.9 225.8 434.1 228.2 434.4 230.8C434.9 234 435 237.3 434.8 240.6z"/></svg>
+            <a href="https://t.me/dcn_helpbot" style="color: #fff; text-decoration: none;">@dcn_helpbot</a>
+          </div>
+          <div class="col-12 col-lg">
+            <hr class="thick-line">
+            <span style="color: #B6AFD0">DCN</span><br><br>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="small-icon"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M237.9 461.4C237.9 463.4 235.6 465 232.7 465C229.4 465.3 227.1 463.7 227.1 461.4C227.1 459.4 229.4 457.8 232.3 457.8C235.3 457.5 237.9 459.1 237.9 461.4zM206.8 456.9C206.1 458.9 208.1 461.2 211.1 461.8C213.7 462.8 216.7 461.8 217.3 459.8C217.9 457.8 216 455.5 213 454.6C210.4 453.9 207.5 454.9 206.8 456.9zM251 455.2C248.1 455.9 246.1 457.8 246.4 460.1C246.7 462.1 249.3 463.4 252.3 462.7C255.2 462 257.2 460.1 256.9 458.1C256.6 456.2 253.9 454.9 251 455.2zM316.8 72C178.1 72 72 177.3 72 316C72 426.9 141.8 521.8 241.5 555.2C254.3 557.5 258.8 549.6 258.8 543.1C258.8 536.9 258.5 502.7 258.5 481.7C258.5 481.7 188.5 496.7 173.8 451.9C173.8 451.9 162.4 422.8 146 415.3C146 415.3 123.1 399.6 147.6 399.9C147.6 399.9 172.5 401.9 186.2 425.7C208.1 464.3 244.8 453.2 259.1 446.6C261.4 430.6 267.9 419.5 275.1 412.9C219.2 406.7 162.8 398.6 162.8 302.4C162.8 274.9 170.4 261.1 186.4 243.5C183.8 237 175.3 210.2 189 175.6C209.9 169.1 258 202.6 258 202.6C278 197 299.5 194.1 320.8 194.1C342.1 194.1 363.6 197 383.6 202.6C383.6 202.6 431.7 169 452.6 175.6C466.3 210.3 457.8 237 455.2 243.5C471.2 261.2 481 275 481 302.4C481 398.9 422.1 406.6 366.2 412.9C375.4 420.8 383.2 435.8 383.2 459.3C383.2 493 382.9 534.7 382.9 542.9C382.9 549.4 387.5 557.3 400.2 555C500.2 521.8 568 426.9 568 316C568 177.3 455.5 72 316.8 72zM169.2 416.9C167.9 417.9 168.2 420.2 169.9 422.1C171.5 423.7 173.8 424.4 175.1 423.1C176.4 422.1 176.1 419.8 174.4 417.9C172.8 416.3 170.5 415.6 169.2 416.9zM158.4 408.8C157.7 410.1 158.7 411.7 160.7 412.7C162.3 413.7 164.3 413.4 165 412C165.7 410.7 164.7 409.1 162.7 408.1C160.7 407.5 159.1 407.8 158.4 408.8zM190.8 444.4C189.2 445.7 189.8 448.7 192.1 450.6C194.4 452.9 197.3 453.2 198.6 451.6C199.9 450.3 199.3 447.3 197.3 445.4C195.1 443.1 192.1 442.8 190.8 444.4zM179.4 429.7C177.8 430.7 177.8 433.3 179.4 435.6C181 437.9 183.7 438.9 185 437.9C186.6 436.6 186.6 434 185 431.7C183.6 429.4 181 428.4 179.4 429.7z"/></svg>
+            <a href="https://github.com/striter-no/dcn" style="color: #FFF; text-decoration: none;">striter-no/dcn</a>
+          </div>
+        </div>
+      <!-- </div> -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/fitty@2"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  </body>
+</html>
+

@@ -1,0 +1,31 @@
+#show-page {
+    min-height: 100vh;
+    width: 100vw;
+    padding-left: 10pc;
+    padding-right: 10pc;
+    padding-top: 10pc;
+    padding-bottom: 5pc;
+}
+
+
+@media (max-width: 992px) {
+    #show-page {
+        padding-left: 2pc;
+        padding-right: 2pc;
+        padding-top: 1pc;
+        padding-bottom: 2pc;
+    }
+}
+
+@media (max-width: 576px) {
+    #show-page {
+        padding-left: 1pc;
+        padding-right: 1pc;
+        padding-top: 0.5pc;
+        padding-bottom: 1pc;
+    }
+}
+
+.big-text {
+    font-size: 48px;
+}

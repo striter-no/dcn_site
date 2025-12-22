@@ -1,0 +1,5 @@
+.cursor
+runtime/databases/*
+venv
+__pycache__
+dev

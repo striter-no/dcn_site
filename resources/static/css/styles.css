@@ -1,0 +1,52 @@
+#main-logo {
+    color: #fff; 
+    font-size: 128px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+#main-parag {
+    background: 
+        linear-gradient(in oklch to right, #000000, #0C0810, #421D37, #2a2a2a2b 70%),
+        url(/static/images/pxfuel.jpg);
+
+    background-repeat: no-repeat;
+    background-blend-mode: normal;
+    background-size: cover;
+
+    height: 100vh;
+    align-content: center;
+    position: relative; 
+}
+
+.copy-rect {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 2pc;
+    width: 4pc;
+    margin-right: 5px;
+    border-width: 0;
+}
+
+#try-in-browser-btn {
+    background-color: #FF2B67;
+    border-radius: 10px;
+    border-width: 0;
+    padding: 10px;
+    width: 20pc;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+#register-domain-btn {
+    background-color: #FF2B67;
+    border-radius: 10px;
+    border-width: 0;
+    padding: 10px;
+    width: 20pc;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}

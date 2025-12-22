@@ -1,0 +1,134 @@
+#reg-page {
+    min-height: 100vh;
+    width: 100vw;
+    padding-left: clamp(1pc, 10vw, 10pc);
+    padding-right: clamp(1pc, 10vw, 10pc);
+    padding-top: clamp(2pc, 10vw, 10pc);
+    padding-bottom: clamp(1pc, 5vw, 5pc);
+}
+
+#pre-reg-page {
+    min-height: 100vh;
+    width: 100vw;
+    padding-left: clamp(1pc, 10vw, 10pc);
+    padding-right: clamp(1pc, 10vw, 10pc);
+    padding-top: clamp(2pc, 10vw, 10pc);
+    padding-bottom: clamp(1pc, 5vw, 5pc);
+}
+
+#rounded-rect {
+    border-radius: 50pc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #5C586A;
+    padding: clamp(10px, 1.5vw, 20px);
+}
+
+#money-rect {
+    padding: clamp(10px, 1.5vw, 20px);
+    background-color: #1A181D;
+    border-radius: clamp(10px, 1vw, 15px);
+}
+
+#reg-button {
+    padding: clamp(12px, 1.5vw, 20px);
+    background-color: #FF2B67;
+    border-radius: clamp(10px, 1vw, 15px);
+    border-width: 0;
+    font-size: clamp(14px, 1.5vw, 20px);
+}
+
+#ip-input {
+    border-radius: clamp(10px, 1vw, 15px);
+    border-width: 0;
+    padding: clamp(8px, 1vw, 10px);
+    background-color: #5C586A;
+    color: #fff;
+    font-family: monospace;
+    text-align: center;
+    font-size: clamp(14px, 1.5vw, 20px);
+}
+
+#domain-input {
+    border-radius: clamp(10px, 1vw, 15px);
+    border-width: 0;
+    padding: clamp(8px, 1vw, 10px);
+    background-color: #5C586A;
+    color: #fff;
+    font-family: monospace;
+    text-align: center;
+    font-size: clamp(14px, 1.5vw, 20px);
+}
+
+.pre-reg {
+    align-content: center;
+}
+
+#domain-next-btn {
+    border-radius: clamp(10px, 1vw, 15px);
+    border-width: 0;
+    padding: clamp(8px, 1vw, 10px);
+    background-color: #bb74b2;
+    color: #fff;
+    font-family: monospace;
+    text-align: center;
+    font-size: clamp(14px, 1.5vw, 20px);
+}
+
+#domain-next-btn:active {
+    background-color: #db66cc;
+}
+
+#domain-next-btn:hover {
+    background-color: #db66cc;
+}
+
+.big-text {
+    font-size: clamp(24px, 4vw, 48px);
+}
+
+.reg-rect {
+    background-color: #3E3B47;
+    padding: clamp(8px, 1vw, 10px);
+    border-radius: clamp(8px, 1vw, 10px);
+    margin-top: clamp(1pc, 2vw, 2pc);
+}
+
+.gray-circle {
+    height: clamp(2pc, 3vw, 3pc);
+    width: clamp(2pc, 3vw, 3pc);
+    border-radius: 50pc;
+    background-color: #D9D9D9;
+    font-family: monospace;
+    font-size: clamp(20px, 2.5vw, 32px);
+}
+
+.pink-circle {
+    height: clamp(2pc, 3vw, 3pc);
+    width: clamp(2pc, 3vw, 3pc);
+    border-radius: 50pc;
+    background-color: #FF2B67;
+    font-family: monospace;
+    font-size: clamp(20px, 2.5vw, 32px);
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.year-text {
+    font-size: clamp(18px, 2.2vw, 28px);
+}
+
+/* Дополнительное масштабирование для очень маленьких экранов */
+@media (max-width: 576px) {
+    #reg-page {
+        padding-left: clamp(0.5pc, 2vw, 1pc);
+        padding-right: clamp(0.5pc, 2vw, 1pc);
+        padding-top: clamp(1pc, 3vw, 2pc);
+        padding-bottom: clamp(0.5pc, 2vw, 1pc);
+    }
+    
+    .reg-rect {
+        padding: clamp(5px, 1vw, 8px);
+    }
+}

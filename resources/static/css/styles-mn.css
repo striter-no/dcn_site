@@ -1,0 +1,80 @@
+#show-page {
+    height: 100vh;
+    width: 100vw;
+    padding-left: 10pc;
+    padding-right: 10pc;
+    padding-top: 1pc;
+    padding-bottom: 5pc;
+}
+
+@media (max-width: 992px) {
+    #show-page {
+        padding-left: 2pc;
+        padding-right: 2pc;
+        padding-top: 1pc;
+        padding-bottom: 2pc;
+    }
+}
+
+@media (max-width: 576px) {
+    #show-page {
+        padding-left: 1pc;
+        padding-right: 1pc;
+        padding-top: 0.5pc;
+        padding-bottom: 1pc;
+    }
+}
+
+#mining-button {
+    background-color: #925566;
+    border-radius: 10px;
+    border-width: 0;
+    padding: 10px;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+#mining-button.active {
+    background-color: #FF2B67;
+}
+
+#mining-button:hover:not(.active) {
+    background-color: #FF2B67;
+}
+
+#mining-button:active {
+    background-color: #FF2B67;
+}
+
+.big-text {
+    font-size: 48px;
+}
+
+.mining-stats {
+    background-color: #2C292F;
+    border-radius: 5px;
+    /* padding-left: 10pc !important; */
+}
+
+.sub-title {
+    font-size: 24px;
+}
+
+.domain-stats {
+    background-color: #2C292F;
+    border-radius: 5px;
+    /* padding-left: 10pc !important; */
+}
+
+.domain-info {
+    background-color: #D9D9D9;
+    border-radius: 5px;
+}
+
+.black-text {
+    color: #000;
+}
+
+.value-text {
+    color: #8affc9
+}

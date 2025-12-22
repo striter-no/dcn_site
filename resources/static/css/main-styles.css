@@ -1,0 +1,238 @@
+body {
+    background-color: #1A181D
+}
+
+#main-footer {
+    background-color: #843D73;
+    /* height: 13pc; */
+    align-content: center;
+    padding-left: 3pc;
+    padding-right: 3pc;
+
+    min-height: auto;
+    overflow: visible;
+    padding-top: 3pc;
+    padding-bottom: 3pc;
+}
+
+.main-body {
+    background-color: #1A181D;
+    height: 100vh;
+}
+
+.tesis {
+    color: #fff; 
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.vert-line {
+    border-left: 2px solid #ffffff;
+    height: 400px;
+    width: 1px;
+}
+
+.main-text {
+    color: #fff;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main2-text {
+    color: #fff;
+    font-size: clamp(14px, 1.5vw, 20px);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.small-text {
+    color: #fff;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.info-text {
+    color: #7E9097;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sub-text {
+    color: #887E97;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mono-text {
+    color: #fff;
+    font-family: monospace;
+}
+
+.ac1 {
+    color: #65FFC1
+}
+
+.ac2 {
+    color: #FF2B67
+}
+
+.white-rect {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 2pc;
+    font-size: 32px;
+    font-family: monospace;
+}
+
+.point {
+    background-color: #fff;
+    border-radius: 50pc;
+    text-align: center;
+    font-size: 32px;
+    width: 50px;
+}
+
+.wrap-rect {
+    background-color: #2C1E31;
+    border-radius: 1pc;
+    padding: 20px 30px 20px 30px;
+}
+
+.small-icon {
+    width: 2pc;
+}
+
+.logo-img {
+    width: 8pc;
+    /* height: 6pc; */
+    /* border-radius: 20px; */
+    /* background-color: #ffffff7c; */
+    /* background-blend-mode: multiply; */
+    background-size: contain;
+}
+
+.text-dots {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.responsive-text {
+  font-size: clamp(1rem, 4vw, 2.5rem); /* min, preferred, max */
+}
+
+.simple-rect {
+    border-radius: 5px;
+    border-width: 0;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.usuall-inp {
+    text-align: left;
+}
+
+hr.thick-line {
+  height: 2px;
+  background-color: #ffffff;
+  border: none;
+}
+
+.row.row-no-stretch {
+  align-items: flex-start; /* Aligns items to the start of the container */
+}
+
+.div.main-cont {
+    padding-right: 15pc; 
+    padding-left: 15pc
+}
+
+/* Стили для элементов с fitty, чтобы сохранить выравнивание */
+/* Fitty сам управляет размером шрифта через inline стили, поэтому не переопределяем font-size */
+
+/* Убеждаемся, что элементы с fitty занимают всю доступную ширину в колонке */
+.fittym,
+.fittyc {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Сохраняем выравнивание текста для элементов с fitty */
+/* Используем более специфичные селекторы для Bootstrap классов */
+.fittym.text-center,
+.fittyc.text-center {
+    text-align: center !important;
+}
+
+.fittym.text-start,
+.fittyc.text-start {
+    text-align: left !important;
+}
+
+.fittym.text-lg-start,
+.fittyc.text-lg-start {
+    text-align: left !important;
+}
+
+/* Для элементов с комбинацией классов text-center и text-lg-start */
+.fittym.text-center.text-lg-start,
+.fittyc.text-center.text-lg-start {
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    .fittym.text-center.text-lg-start,
+    .fittyc.text-center.text-lg-start {
+        text-align: left !important;
+    }
+}
+
+/* Убеждаемся, что содержимое fitty наследует выравнивание */
+.fittym *,
+.fittyc * {
+    text-align: inherit;
+}
+
+/* Для контейнеров, которые создает fitty */
+.fitty-container {
+    text-align: inherit !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.fitty-content {
+    text-align: inherit !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.back-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color 0.2s;
+    opacity: 0.5;
+}
+
+.back-btn:hover {
+    background-color: #f0f0f0;
+    opacity: 1;
+}
+
+.back-btn:active {
+    background-color: #e0e0e0;
+    opacity: 1;
+}
